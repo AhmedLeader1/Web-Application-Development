@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:400,700|Cousine|Tinos&display=swap');
+
+:root {
+  font-family: 'Arimo', sans-serif;
+}
+
+body {
+  background-image: linear-gradient(to right, #a9b0bc, #949da9, #7f8b97, #6a7985, #566773);
+  font-size:16px;
+  max-width: 80%;
+}
+
+code, pre {
+  font-family: 'Cousine', monospace;
+  font-size: 95%;
+}
+
+textarea {
+  width: 80%;
+}
+
+p.indent {
+  text-indent: 1.4em;
+}
+button {
+  background-color: #808080;
+}
+
+label {
+  margin-right: 1em;
+}
+
+
+
+.box:hover {
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+  box-shadow: 0 2px 4px #333;
+}
+
+#cont2 ul {
+  padding-top: 0.85em;
+  padding-bottom: 0.85em;
+  border-radius: 5px;
+}
+
+#cont2 li:hover {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+}
+
+#cont3 p {
+  user-select: none;
+}
+
+
+#cont5 .box {
+  background-color: #333;
+  width: 10em;
+  height: 10em;
+  max-width: 30em;
+  max-height: 30em;
+
+}
+
+#cont6 img {
+  border-radius: 5px;
+  transition: opacity 250ms ease-in-out;
+}
+
+#cont6 img, #part6 button {
+  margin: 0.85em auto;
+  display: block;
+}
+
+#cont7 li:hover {
+  -webkit-transform: translateX(5px);
+  transform: translateX(5px);
+}

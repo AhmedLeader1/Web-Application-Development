@@ -1,0 +1,283 @@
+
+/*
+Student Name: Ahmed Ahmed
+Student #: 0632851
+COIS 3420
+Assignment 1
+
+Purpose: This is the third question of Assignment 1. In this Question I am creating an "about me" page, and a resume page.
+In this CSS styling page, I am outlining the properties of "about me" page as i am going to produce the best layout and stylings i can creates
+
+In this CSS styling includes some sylings for the main page, animation, youtube vide link, a link to my resume page, a link to google map, an email form in which
+the user can send a direct message, other usefull links, and a link to social media networks in the footer
+*/
+
+/*defines the styles and sets the properties in the main body of the page*/
+body
+{
+display: flex;
+flex-direction: column;
+background: #fff;
+color: #222;
+font-family: helvetica, arial, sans-serif;
+font-size: 16px;
+justify-content: space-between;
+}
+
+
+
+/* defines the styles of the paragraohs in the page */
+#Aboutme	p
+{
+color: #444;
+font-size: 1em;
+line-height: 1.4em;
+margin-bottom: 20px;
+
+}
+/*Set the properties of the images in the page*/
+#Aboutme img {
+width: 100%;
+height: auto;
+-webkit-border-radius: 50px;
+border-radius: 50px;
+}
+
+/*set the properties of the unordered list in the page*/
+#Aboutme ul li {
+margin-bottom: 3px;
+color: #444;
+}
+
+/* Set and define the properties and the styles of the text animation in the page*/
+#animation
+{
+
+width:50%;
+margin-right: 90%;
+margin-left: 5px;
+height:80px;
+font-family: sans-serif;
+text-transform: uppercase;
+font-size: 4em;
+letter-spacing: 4px;
+overflow: hidden;
+background:  linear-gradient(green, blue);
+background-repeat: no-repeat;
+background-size: 80%;
+animation: animate 3s linear infinite;
+-webkit-background-clip: text;
+-webkit-text-fill-color: rgba(255, 255, 255, 0);
+
+}
+
+/* Define the @keyframe of the animation in the page */
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
+
+/*define further the properties of the unordered list in the page*/
+#Aboutme ul {
+list-style-type: none;
+font-size: 0.9em;
+margin-top: 4px;
+list-style-type: square;
+}
+/* Define attributes for the contactDetails list elements in the resume*/
+#Aboutme ul li {
+margin-bottom: 3px;
+color: #444;
+
+}
+
+/* creates the color of the hover to be purple once the user hovers over the links */
+a:hover
+{
+color: #bc2792;
+}
+
+/* this creates the styles of all the links in the resume page */
+a {
+/* make the initial color of all the links to be blue */
+color: #0000FF;
+/* no need for extra text-docorations */
+text-decoration: none;
+}
+
+
+
+
+
+/* Define the table attributes in the page */
+table {
+font-family: 'Lato', sans-serif;
+border-collapse: collapse;
+margin: 20px;
+}
+
+/* Define the column attributes of the table */
+td, th {
+border: 1px solid #ddd;
+padding: 8px;
+}
+/* Define the nth-child attributes of the table */
+tr:nth-child(even) {
+background-color: #f2f2f2;
+}
+
+/*define background of the hover in the table */
+tr:hover {
+background-color: #ddd;
+}
+th {
+padding-top: 12px;
+padding-bottom: 12px;
+text-align: left;
+background-color: Gray;
+color: white;
+}
+
+/* Sets the properties of the boxes in the table */
+*
+{
+box-sizing: border-box;
+padding: inherit;
+margin: auto;
+font-family: sans-serif;
+}
+/* deterermines the properties of the input in the send message form */
+input[type=text], input[type=password], textarea {
+width: 100%;
+font-family: sans-serif;
+padding: 15px;
+margin: 20px 0 20px 0;
+display: inline-block;
+border: none;
+background: #f1f1f1;
+}
+/* defines the properties of the input in the sendmessage form */
+input[type=text]:focus, input[type=password]:focus, textarea:focus {
+background-color: #ddd;
+outline: none;
+}
+
+/* sets the layout propeties of the buttons the form */
+button {
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+cursor: pointer;
+width: 100%;
+opacity: 0.9;
+}
+
+/* defines the hover stylings in the form */
+button:hover {
+opacity: 1;
+}
+/*defines the properties of the send button */
+.sendbtn {
+width: 100%;
+}
+
+/* sets the propetie of the container int he page */
+.container {
+border: none;
+color: #26464f;
+font-family: 'Lato', sans-serif;
+padding-left: 35%;
+padding-right: 35%;
+padding-top: 20px;
+padding-bottom: 20px;
+text-align: center;
+}
+.clearfix::after {
+content: "";
+clear: both;
+display: table;
+}
+
+/* sets .clear to be both */
+.clear
+{
+clear: both;
+}
+
+/* sets the propetie of the container1 int he page */
+.container1 {
+color: #696969;
+font-family: 'Lato', sans-serif;
+text-align: left;
+}
+
+/* sets the two colums*/
+.twocolumn {
+float: left;
+width: 50%;
+}
+
+
+/* sets the four colums*/
+.fourcolumn {
+float: left;
+width: 25%;
+}
+
+/* sets the the rows in the form*/
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+/* sets the columns, container altogher*/
+.twocolumn .container, .fourcolumn .container {
+padding-left: 20px;
+padding-right: 20px;
+}
+
+
+/*sets the properties of the footer */
+#footer {
+position: relative;
+bottom: 0;
+width: 100%;
+height: 150px;
+background-color: #26464f;
+}
+
+/*set the properties of the copyright in the footer */
+#footer p.copyright
+{
+width: 100%;
+color: #fff;
+line-height: 40px;
+font-size: 0.9em;
+text-align: center;
+bottom:0;
+}
+
+/* this is the CSS that makes the google map in the contact address to be responsive */
+.map-container-google-3{
+
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+height:0;
+}
+
+/* Define the iframe styles of the google map in the page*/
+.map-container-google-3 iframe{
+left:0;
+top:0;
+height:400px;
+width:400px;
+position:absolute;
+}

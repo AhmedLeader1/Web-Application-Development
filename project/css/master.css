@@ -1,0 +1,676 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+* {              /*all the elements*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/*
+  body of all pages:
+*/
+body {
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 30px;
+  color: #777;
+  background: #FFFFFF;
+}
+/* all the hyperlinks*/
+a{
+  text-decoration: none;
+}
+/*
+    class name: sidebar
+    description: this is  navigation menu in the display page that shows up when the
+    screen in maximized more than 950px;
+*/
+.sidebar{
+  z-index: 3;
+  width: 20%;
+  height: 800px;
+  font-weight: bold;
+  font-size: 22px;
+  float: left;
+  background-color: rgb(14, 185, 222);
+  color: white;
+}
+/*hyperlinks in sidebar navigation*/
+.sidebar a, .sidebar h3{
+  text-decoration: none;
+  display: block;
+  padding-left: 50px;
+  padding-top: 30px;
+  color: white;
+}
+/*hyperlinks in sidebar navigation in hover state*/
+.sidebar a:hover{
+  color: black;
+  background: white;
+  padding: 5px;
+  height: auto;
+  max-width: 80%;
+  margin-left: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+/*header 3 in sidebar navigation*/
+.sidebar h3{
+
+  padding-top: 70px;
+  padding-bottom: 120px;
+  color: white;
+  font-weight: bolder;
+}
+/*hyperlinks in container header*/
+ .header a{
+  text-decoration: none;
+}
+/*
+  class name: header
+  description: this contains dropdown navigation that shows up when
+               the screen size of display page is minimized  below 950px.
+               it has two containers.
+ */
+.header{
+  font-size: 22px;
+  font-weight: bold;
+  display: none;
+}
+
+/*
+  class name: tittle
+  page:  display page
+  description: header 1 in div title
+*/
+.title h1{
+  font-family:  "Poppins", sans-serif;
+}
+/*header 1 with id h1 in title container in display page*/
+#h1{
+  color: rgb(14, 185, 222);
+}
+/*line that shows in display page*/
+.line{
+  width: 50px;
+  border: 5px solid rgb(14, 185, 222);
+  border-radius: 0.4em;
+  margin-bottom: 40px;
+}
+
+/*dropdown menu in display page*/
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: rgb(240, 203, 193);
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: auto;
+  z-index: 1;
+}
+/*hyperlinks in dropdown menu*/
+.dropdown-content a {
+  color: #000;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+}
+/*hoover state of dropdown menu*/
+.dropdown-content a:hover {background-color: #fff;
+color: #000;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*
+
+   class: main
+   description: it contains the main content of the page in display page
+*/
+.main{
+  max-width: 70%;
+  margin-left: 300px;
+  float: left;
+  max-height: 800px;
+  overflow: auto;
+}
+/*
+   class: container
+   description: it is general container that holds other elements
+*/
+.container{
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+/*it contains the lists shared by other users in display page*/
+.shared{
+  max-width: 700px;
+  margin-top: 200px;
+}
+/* container that holds each list of a user*/
+.userdiv{
+  width: 500px;
+  position: relative;
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: 7px solid rgb(14, 185, 222);
+  font-size: 16px;
+  font-weight: 300;
+}
+/*columns in list of a user*/
+.span{
+  font-size: 16px;
+  font-weight: bold;
+}
+/*
+  font size (form elements)
+   e.g. #updateForm, #signupForm, #loginForm and #createGoal
+*/
+#updateForm input[type="text"],
+#updateForm input[type="password"],
+#updateForm label,
+#updateForm button[type="submit"],
+#deleteForm button[type="submit"],
+#signupForm input[type="text"],
+#signupForm input[type="email"],
+#signupForm input[type="password"],
+#signupForm label,
+#signupForm button[type="submit"],
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#loginForm label,
+#loginForm button[type="submit"],
+#createGoal input[type="text"],
+#createGoal input[type="date"],
+#createGoal select,
+#createGoal textarea,
+#createGoal button[type="submit"],
+#createGoal button[type="reset"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+  color: #000;
+}
+/*form for createGoal, loginForm, signupForm,msgform, errorMsgForm*/
+#createGoal, #loginForm, #signupForm,
+#msgform, #errorMsgForm{
+  background: #ebe1e1;
+  padding: 25px;
+  margin: 130px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  color: #000000;
+  font-size: 14px;
+}
+/*holds image for profile*/
+.bar1{
+  background: #ebe1e1;;
+  padding: 25px;
+  margin: 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+/*general container that wraps another container*/
+.wrapper{
+  padding: 20px;
+}
+/* updateForm and deleteForm in setting page*/
+#updateForm, #deleteForm{
+  background: #ebe1e1;;
+  padding: 25px;
+  margin-top: 25px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+/*h3 in the following forms : updateForm, deleteForm, createGoal, loginForm and signupForm*/
+#updateForm h3,
+#deleteForm h3,
+#createGoal h3,
+#loginForm h3,
+#signupForm h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #000;
+}
+/*fieldset in general*/
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+/*
+  width, border, background, padding and margin (createGoal form elements, updateForm, signupForm, loginForm)
+*/
+#updateForm input[type="text"],
+#updateForm input[type="password"],
+#signupForm input[type="text"],
+#signupForm input[type="email"],
+#signupForm input[type="password"],
+#loginForm input[type="text"],
+#loginForm input[type="password"],
+#createGoal input[type="text"],
+#createGoal input[type="date"],
+#createGoal textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  color: #000;
+}
+/*
+  input elements in hover state (createGoal form elements, updateForm, signupForm, loginForm)
+*/
+#updateForm input[type="text"]:hover,
+#updateForm input[type="password"]:hover,
+#signupForm input[type="text"]:hover,
+#signupForm input[type="email"]:hover,
+#signupForm input[type="password"]:hover,
+#loginForm input[type="text"]:hover,
+#loginForm input[type="password"]:hover,
+#createGoal input[type="text"]:hover,
+#createGoal input[type="date"]:hover,
+#createGoal textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+/*textarea for createGoal in create page*/
+#createGoal textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+/*submit button in the following forms: updateForm, signupForm, loginForm, createGoal and delete div and edit div*/
+#delete, #edit,
+#updateForm button[type="submit"],
+#deleteForm button[type="submit"],
+#signupForm button[type="submit"],
+#loginForm button[type="submit"],
+#createGoal button[type="submit"],
+#createGoal button[type="reset"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #FFFFFF;
+  color: #777;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+/*submit button in hover state in the following forms: updateForm, signupForm, loginForm, createGoal and delete div and edit div*/
+#edit:hover, #delete:hover,
+#updateForm button[type="submit"]:hover,
+#deleteForm button[type="submit"]:hover,
+#signupForm button[type="submit"]:hover,
+#loginForm button[type="submit"]:hover,
+#createGoal button[type="submit"]:hover,
+#createGoal button[type="reset"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+  color: #000;
+}
+/*submit button in active state in the following forms: updateForm, signupForm, loginForm, createGoal and delete div and edit div*/
+#edit:active, #delete:active,
+#updateForm button[type="submit"]:active,
+#deleteForm button[type="submit"]:active,
+#signupForm button[type="submit"]:active,
+#loginForm button[type="submit"]:active,
+#createGoal button[type="submit"]:active,
+#createGoal button[type="reset"]:active, {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/*edit and delete divs in setting page*/
+#edit,
+#delete{
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #FFFFFF;
+  color: #777;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+/* paragraph with class name copyright*/
+.copyright, #delete, #edit {
+  text-align: center;
+}
+/*input in createGoal, updateForm, loginForm and signupForm*/
+#updateForm input:focus,
+#signupForm input:focus,
+#loginForm input:focus,
+#createGoal input:focus,
+#createGoal textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+/*stylings for the error messages*/
+#error {
+    color: red;
+    content: '*';
+    margin-right: auto;
+    margin-bottom: 5px;
+    text-decoration: none;
+    list-style-type: none;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/*hide containers in setting*/
+#updateForm, #deleteForm{
+  display: none;
+}
+
+/*links in the message page forms*/
+.msglink{
+  margin-left: 28%;
+  margin-right: 25%;
+  margin-top: 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  color: #000;
+  font-size: 1em;
+  display:inline-block;
+  height:60px;
+  width:150px;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.9em;
+}
+
+/*what happens to the links inside the button on hover*/
+.msglink:hover, .btn:hover, .terms:hover, .mainform:hover, a:hover, #showarea a:hover{
+  transition: .5s all;
+  background: #000000;
+  color: white;
+}
+
+/*
+   class name: profile
+   description:
+*/
+.bar1 img{
+  width: 50px;
+  height: 53px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 15px;
+}
+/*.bar1{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: auto;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 4px solid rgb(30, 184, 199);
+  background-color: #F2F2F2;
+}*/
+/*section functionality in index page*/
+.functionality h2{
+  position: relative;
+  left: 40%;
+  font-size: 1.5em;
+}
+/*icons in menu page*/
+.Icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/*icon headers in menu page*/
+.iconHeader{
+  color: gray;
+  font-size: 1em;
+}
+/*div row that holds icons in index page*/
+.row{
+  display: flex;
+  flex-direction: row;
+}
+/*footer for all the pages*/
+footer {
+  align-content: center;
+  background-color: rgb(14, 185, 222);
+  display: flex;
+  flex-direction: column;
+  height: 120px;
+  align-items: center;
+  width: 100%;
+}
+/*fixed header*/
+/*header*/
+#header{
+  align-content: space-between;
+  background-color: rgb(14, 185, 222);
+  font-size: 18px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+/*logo*/
+.logo{
+  font-size: 1.5em;
+  text-align: center;
+  color: #000;
+  font-weight: 100;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  float: left;
+  padding-right: 700px;
+  align-self: center;
+}
+
+/*main content area of the index page*/
+/*this section is has slideshow of two images in the index page*/
+ #showarea {
+   height: 650px;
+   width: 100%;
+   overflow: hidden;
+   text-align: center;
+}
+/*figure*/
+#showarea figure{
+  position: relative;
+  margin: 0;
+  left: 0;
+  width: 200%;
+  animation: 8s slider infinite;
+}
+/*the images that slide in the index page*/
+#showarea figure img{
+  width: 50%;
+  height: 625px;
+  float: left;
+  filter: brightness(40%);
+}
+/*
+*@keyframes of the animation slider
+*/
+@keyframes slider {
+  0% {
+    left: 0;
+  }
+  40{
+    left: -50;
+  }
+  55% {
+    left: -100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+/*caption*/
+#showarea .caption1, #showarea .caption2 {
+  position: absolute;
+  color: white;
+  font-size: 2em;
+  transform: translate(-50%, -50%);
+  text-shadow:  0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+#showarea .caption1{
+  top: 45%;
+  left: 50%;
+}
+#showarea .caption2 {
+  top: 53%;
+  left: 50%;
+}
+/*buttons*/
+#showarea .indexButton1 {
+  position: absolute;
+  border-radius: 0.2em;
+  font-size: 1em;
+  padding: 10px;
+  text-align: center;
+  color: 	#FFD700;
+  border: 1px solid #fff;
+  background-color: #000;
+  color: #fff;
+  top: 60%;
+  left: 43%;
+  text-decoration: none;
+}
+/*hyperlinks in showarea page*/
+#showarea a {
+  color: #FFD700;
+}
+
+
+/* Styling social media buttons */
+input[type=image] {
+margin: 20px 20px 20px 20px;
+height: 30px;
+width: 30px;
+float: center;
+display: block;
+border-radius: 10px; /* rounded corners */
+overflow: hidden;
+}
+/*table that contains the users list in mylist page*/
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  color: #000;
+  margin-left: 10px;
+  font-size: 14px;
+}
+/*table cells*/
+#table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+/*table row wih class name .tr1*/
+#table .tr1 {
+  background-color: rgb(14, 185, 222);
+  font-weight: bold;
+  font-size: 18px;
+}
+/*table rows that are even*/
+#table tr:nth-child(even){background-color: #AAA1A0;}
+
+/*table rows in hover state*/
+#table tr:hover {transition: .5s all;
+background: #F0DAD5;
+color: #000000;
+}
+/*table headers*/
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+}
+/*body of my list page*/
+#myList{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+}
+/*container that holds the table with users list in mylist page*/
+#myList .list{
+  margin-top: 5%;
+  margin-bottom: 10px;
+  text-align: left;
+  margin-left: 10px;
+  font-size: 18px;
+  color: #000;
+  font-weight: bold;
+}
+
+
+/*=============================================================================*/
+ /*page display*/
+  .main .container{
+    display: none;
+  }
+/*=============================================================================*/
+@media only screen and (max-width: 950px){ /*when minimized less than 950px*/
+  .sidebar{
+    display: none;
+  }
+  .main{
+    max-width: 100%;
+    margin-left: 80px;
+    max-height: 650px;
+    overflow: auto;
+  }
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height: auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(14, 185, 222);
+    color: white;
+  }
+  .menuButton{
+    color: white;
+  }
+
+@media only screen and (max-width: 400px){
+  body{
+    margin: 0;
+  }
+  .main{
+    max-width: 100%;
+    margin-left: 0;
+  }
+}

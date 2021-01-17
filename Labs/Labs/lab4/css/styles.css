@@ -1,0 +1,129 @@
+<html><head>
+<title>Contact Me</title>
+<link rel="stylesheet" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+
+<div id="header"><div class="navbar">
+  <a class="active" href="index.html">Home</a>
+  <a class="dropbtn" href="contactme.html">Contact</a>
+  <a class="dropbtn" href="resume.html">Resume</a>
+  <a class="navbarright" href="signup.html">Sign Up</a>
+  <a class="navbarright" href="login.html">Login</a>
+  <div class="dropdown">
+    <button class="dropbtn">COIS 2830 Assignments
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="assignment1.html">Assignment 1</a>
+      <a href="assignment2.html">Assignment 2</a>
+      <a href="assignment3.html">Assignment 3</a>
+	  <a href="assignment4.html">Assignment 4</a>
+	  <a href="assignment5.html">Assignment 5</a>
+	  <a href="assignment6.html">Assignment 6</a>
+    </div>
+  </div>
+</div></div>
+<script>$("#header").load("header.html")</script>
+
+<noscript>
+<div style="text-align:center">
+<h1 style="font-size: 2em; color:red">The navigation bar and footer both require JavaScript -- please enable it!</h1>
+</div>
+</noscript>
+
+<div class="main">
+<div class="row">
+  <div class="twocolumn">
+	<h1>Contact Me </h1>
+
+	<p>Looking to get ahold of me? No problem! You're  in the right place.</p>
+	<p>Want to email me directly? <strong>melissavanbussel at trentu dot ca</strong> </p>
+	<p>Want to call me? <strong>(+1) 705-555-5555</strong> </p>
+	<p>Want to visit me in person? Come to Trent University, you'll find me somewhere! </p>
+	<p>If you'd prefer to directly send me a message here, just fill out the form on this page!</p>
+	<p>If you want to contact me on socia media, scroll down to the bottom of the page!</p>
+
+	<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="400px" id="gmap_canvas" src="https://maps.google.com/maps?q=trent%20university&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div><style>.mapouter{text-align:right;height:400px;width:100%;}.gmap_canvas {padding-left:20px;padding-right:20px;overflow:hidden;background:none!important;height:400px;width:100%;}</style></div>
+  </div>
+  <div class="twocolumn">
+  <h1>Send me a message </h1>
+  <form action="" method="post" style="border: none">
+  <div class="container">
+
+	<div class="signuptext">Full Name*</div>
+    <input type="text" placeholder="John Doe" name="fullname" required="">
+
+    <div class="signuptext">Email*</div>
+    <input type="text" placeholder="yourname@example.com" name="email" required="">
+
+	<div class="signuptext">Phone number (optional)</div>
+    <input type="text" placeholder="(+1) 555-555-5555" name="phonenum">
+
+	<div class="signuptext"> Your message* </div>
+	<textarea id="message" name="message" placeholder="Write something..." style="height:200px" required=""></textarea>
+
+    <input type="checkbox" checked="checked" name="emailcopy" style="margin-bottom:15px">Email me a copy of my message
+	<br>
+
+	<button type="submit" class="signupbtn">Send</button>
+
+   </div>
+   </form>
+  </div>
+</div>
+
+
+
+
+<div id="footer"><footer>
+	<div class="row">
+	<div class="fourcolumn" align="center">
+		<form action="https://www.facebook.com" method="post">
+			<input type="image" src="images/facebooklogo.png" height="40px" width="40px">
+		</form>
+	</div>
+	<div class="fourcolumn" align="center">
+		<form action="https://www.instagram.com" method="post">
+			<input type="image" src="images/instagramlogo.png" height="40px" width="40px">
+		</form>
+	</div>
+	<div class="fourcolumn" align="center">
+		<form action="https://www.linkedin.com" method="post">
+			<input type="image" src="images/linkedinlogo.png" height="40px" width="40px">
+		</form>
+	</div>
+	<div class="fourcolumn" align="center">
+		<form action="https://www.twitter.com" method="post">
+			<input type="image" src="images/twitterlogo.png" height="40px" width="40px">
+		</form>
+	</div>
+	</div>
+	<p class="copyright">© Melissa Van Bussel 2018</p>
+
+</footer></div>
+<script>$("#footer").load("footer.html")</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></body></html>

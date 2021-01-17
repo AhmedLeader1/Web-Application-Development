@@ -1,0 +1,167 @@
+
+<!--
+		Student Name: Ahmed Ahmed
+ 		Student #: 0632851
+ 		COIS 3420
+ 		Assignment 1
+
+		This is the third question of Assignment 1. In this Question I am creating an "about me" page, and a resume page.
+		The "about me page" is mainly introducing who i am, the social medias that you can use to connect to me, and the Google map link that you can use to find me at Trent univerisy.
+		The "Resume" page contains a copy of my resume.
+	-->
+<!doctype html>
+<html lang ="en">
+<head>
+<title>Assignment 1</title>
+<link rel="stylesheet" href="css/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+	<div class="Aboutme">
+
+	<h1> Ahmed Ahmed</h1><br>
+		<img src="img/Ahmed.jpg" alt='MyFace' width="150" height="200"><br><br>
+
+		<p>In this page, you can find so many ways that can help you to know more about me. These include:</p>
+			<ol>
+				<li>You can get my email address to send me an email directly to me.</li>
+				<li>You can simply fill the form on the right side and send an email without leaving this page. That is great, right? saves lots of time.</li>
+				<li>You can get the exact location of Trent University if you would like to meet with me face to face, Google map is everywhere these days</li>
+				<li>Lastly, but not the least, you can see a copy of resume in the next page and know about me, my work experience, and many others.</li>
+
+			</ol><br>
+
+<h2> About my recent Project</h2><br>
+<p>I have recently completed a project called "GreenMetric". This project was a worldwide project in which all the universities around the world were ranked according to how green their campus was.</p>
+<p> I was doing this project on behalf of the Sustainability office @Trent Univesity. In my project, I was assessing the green and the non-green part of Trent Univesity at Symons campus (Peterborough) using ArcGIS pro software</P>
+<P> Trent was proud to be the only university in Ontario to install Green parking. It was also ranked at #66 in the world and #5 in Canada for its environmental leadership.<br><br>
+<div id="video">
+	</div>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/j5EojL1-xVY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<div id="animation">
+	<p> Green Metric</p>
+</div><br><br>
+
+
+	<div class="row">
+		<div class="twocolumn">
+			<h1> Contact Me</h1><br>
+				<p>Are you looking to get ahold of me? if so, You're  in the right place.</p>
+				<p> Do you Want to email me directly? <strong>ahmedahmed@trentu.ca</strong> </p>
+				<p>Interested to call me? <strong>(+1) 705-111-1111</strong> </p>
+				<p>Want to meet me in person? Come to Trent University, you'll find me somewhere! </p>
+				<p>If you'd prefer to directly send me a message here, just fill out the form on this page!</p>
+				<p>If you want to contact me on socia media, scroll down to the bottom of the page!</p><br>
+<!-- Trent Univesity Google Map-->
+
+
+<div id="map-container-google-3" class="z-depth-1-half map-container-3">
+  <iframe width="600" height="700" src="https://maps.google.com/maps?q=trent%20university&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" style="border:0"></iframe>
+</div>
+</div>
+
+
+			  <div class="twocolumn">
+			  <h1>Send me a message </h1>
+			  <form action="#0" method="post" style="border: none">
+			  <div class="container">
+
+				<div class="container1">Full Name*</div>
+			    <input type="text" placeholder="Ahmed Ahmed" name="fullname" required="">
+
+			    <div class="container1">Email*</div>
+			    <input type="text" placeholder="LastNameFirstName@trentu.ca" name="email" required="">
+
+				<div class="container1">Phone number (optional)</div>
+			    <input type="text" placeholder="(+1) 555-555-5555" name="phonenum">
+
+				<div class="container1"> Your message* </div>
+				<textarea id="message" name="message" placeholder="Write something..." style="height:200px" required=""></textarea>
+
+			    <input type="checkbox" checked="checked" name="emailcopy" style="margin-bottom:15px">Email me a copy of my message
+				<br>
+
+				<button type="submit" class="sendpbtn">Send</button>
+
+
+			   </div>
+			   </form>
+			  </div>
+				<h2> My Resume</h2><br>
+			 <p>Interested to see a copy of my Resume?</p>
+			 <a href="Resume.html"> Please simply click here to see my resume</a><br><br>
+			</div>
+			</div>
+
+<h2>Some Useful Links</h2>
+			<table>
+			  <tbody><tr>
+			    <th>Topics</th>
+			    <th>Links</th>
+			  </tr>
+			  <tr>
+			    <td>Research</td>
+			    <td><a href="https://www.airweb.org/"> Associate For Institutional Research</a></td>
+			  </tr>
+				<tr>
+ 				 <td>Music</td>
+ 				 <td><a href="https://www.concerthotels.com/100-years-of-rock/"> 100 years of Rock</a></td>
+ 			 </tr>
+			 <tr>
+ 				<td>Games</td>
+ 				<td><a href="https://pbskids.org/games/animal/"> Animal Games</a></td>
+ 			</tr>
+
+			</tbody></table>
+
+
+	<div id="footer"><footer>
+		<div class="row">
+		<div class="fourcolumn">
+			<!-- Link to facebook-->
+			<form action="https://www.facebook.com" method="post">
+				<input type="image" src="img/facebooklogo.png" alt ="Facebook" height="40" width="40">
+			</form>
+		</div>
+	  <div class="fourcolumn">
+
+				<!-- Link to GitHub-->
+	    <form action="https://github.com" method="post">
+	      <input type="image" src="img/GitHublogo.png" alt= "GitHub" height="40" width="40">
+	    </form>
+	  </div>
+	  <div class="fourcolumn">
+
+				<!-- Link to WhatsApp-->
+	    <form action="https://www.whatsapp.com" method="post">
+	      <input type="image" src="img/WhatsApplogo.png" alt= "WhatsApp" height="40" width="40">
+	    </form>
+	  </div>
+
+
+		<div class="fourcolumn">
+
+				<!-- Link to Twitter-->
+			<form action="https://www.twitter.com" method="post">
+				<input type="image" src="img/twitterlogo.png" alt="Twitter" height="40" width="40">
+			</form>
+		</div>
+		</div>
+		<p class="copyright">© Ahmed Ahmed 2020</p>
+
+	</footer>
+	</div>
+	<script>$("#footer").load("footer.html")</script>
+
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang ="en">
+<head>
+<title>Ahmed Ahmed</title>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lato:300');
+body
+{
+											background-color:#fff;
+											min-width:600px;
+											font-family: 'Museo Sans W01 300', Arial;
+											padding: 0;
+											margin: 0;
+											line-height:1.3em;
+											color:#003f2e;
+											text-align: justify;
+											font-size: 18px;
+											height: 100%;
+										}
+</style>
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+
+
+	<div id="header">
+		<div class="navbar">
+		<a class="active" href="Home.html">Home</a>
+		<a class="dropbtn" href="assignment3.html">Contact</a>
+		<a class="dropbtn" href="assignment2.html">Resume</a>
+
+
+
+	<div class="dropdown">
+	<button class="dropbtn">Assignments
+		<i class="fa-caret-down"></i>
+	</button>
+	<div class="dropdown-content">
+
+		<h1>Asignment 1</h1>
+		<a href="Lab1.html">Question 1</a>
+		<a href="Lab2.html">Question 2</a>
+		<a href="Lab3.html">Question 3</a>
+
+		<h1>Asignment 2</h1>
+		<a href="Lab1.html">Question 1</a>
+		<a href="Lab2.html">Question 2</a>
+		<a href="Lab3.html">Question 3</a>
+
+		<h1>Asignment 3</h1>
+		<a href="Lab1.html">Question 1</a>
+		<a href="Lab2.html">Question 2</a>
+		<a href="Lab3.html">Question 3</a>
+
+
+	</div>
+	</div>
+
+		<div class="dropdown">
+			<button class="dropbtn">Labs
+				<i class="fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+
+				<a href="Lab1.html">Lab 1</a>
+				<a href="Lab2.html">Lab 2</a>
+				<a href="Lab3.html">Lab 3</a>
+				<a href="Lab4.html">Lab 4</a>
+				<a href="Lab5.html">Lab 5</a>
+				<a href="Lab6.html">Lab 6</a>
+				<a href="Lab7.html">Lab 7</a>
+				<a href="Lab8.html">Lab 8</a>
+				<a href="Lab9.html">Lab 9</a>
+				<a href="Lab10.html">Lab 10</a>
+
+		</div>
+	</div>
+	</div></div>
+	<script>$("#header").load("header.html")</script>
+<noscript>
+<div style="text-align:center">
+<h1 style="font-size: 2em; color:red">The navigation bar and footer both require JavaScript -- please enable it!</h1>
+</div>
+</noscript>
+
+<div class="main">
+<h1>Creating a voting form</h1>
+<div>
+        <img src="img/wonka.png" alt ="" height = "100" width = "100">
+      <ul>
+        <li> <a href="Home.html" target="_blank">Home</a> </li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+
+      <form name="0.1_voterform" action="index.php" method="post">
+        <div>
+
+          <label for="email">Email</label>
+          <input type="email" name="email" id = "email" value="">
+        </div>
+
+        <fieldset>
+          <legend>Prospective</legend>
+          <div>
+            <input type="radio" name="Prospective" value="c">
+            <label>Customer</label>
+          </div>
+
+          <div>
+            <input type="radio" name="Prospective" value="r">
+            <label>Reseller</label>
+          </div>
+
+          <div>
+            <input type="radio" name="Prospective" value="o">
+            <label> Oompa-Loompa </label>
+          </div>
+        </fieldset>
+          <div>
+
+            <label>Product Choice</label>
+            <select name="product choice">
+              <option value="0">Please Choose One</option>
+              <option value="Wonka Bar">Wonka Bar</option>
+              <option value="Buttercups">Buttercups</option>
+              <option value="Hot Ice Cream">Hot Ice Cream</option>
+            </select>
+          </div>
+          <button type="button" name="vote">Vote</button>
+      </form>
+      <span></span>
+  </div>
+</div>
+<div id="footer"><footer>
+	<div class="row">
+	<div class="fourcolumn">
+		<form action="https://www.facebook.com" method="post">
+			<input type="image" src="facebooklogo.png" alt ="Facebook" height="40" width="40">
+		</form>
+	</div>
+  <div class="fourcolumn">
+    <form action="https://www.youtube.com" method="post">
+      <input type="image" src="youtubelogo.png" alt= "YouTube" height="40" width="40">
+    </form>
+  </div>
+  <div class="fourcolumn">
+    <form action="https://www.whatsapp.com" method="post">
+      <input type="image" src="WhatsApplogo.png" alt= "WhatsApp" height="40" width="40">
+    </form>
+  </div>
+
+
+	<div class="fourcolumn">
+		<form action="https://www.twitter.com" method="post">
+			<input type="image" src="twitterlogo.png" alt="Twitter" height="40" width="40">
+		</form>
+	</div>
+	</div>
+	<p class="copyright">© Ahmed Ahmed 2020</p>
+
+</footer>
+</div>
+<script>$("#footer").load("footer.html")</script>
+
+</body></html>

@@ -1,0 +1,92 @@
+/*
+		Student Name: Ahmed Ahmed
+ 		Student #: 0632851
+ 		Course: COIS 3420
+
+		Purpose: The main purpose of this CSS document is for Assignment 1 Question 2
+		In this CSS document page I am creating the style for the HTML elements according to the layout which the professor wants..
+*/
+
+
+/* This sets the parent elements as flex boxes */
+.parent{
+	display:flex;
+}
+
+/* Display the first container to be at the top of the screen, and reverse its order */
+#q3a{
+	align-items: flex-start;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+}
+
+/* Style the 2nd container to be at the right corner of the screen as a column*/
+#q3b{
+	align-items: flex-end;
+	flex-direction: column;
+  justify-content: space-around;
+
+}
+
+/* Display the 3rd container in reverse order, and wrap it at the end*/
+#q3c{
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+
+/* Set the order and the alignment of the 3rd item */
+#q3e > div:nth-child(3){
+/* align it to the top */
+	align-self: flex-start;
+
+/*  exapand its left margin */
+	margin-left:auto;
+	order: 5;
+}
+
+/* Put the Order of the fifth item of the 5th container to be in the 6th position */
+#q3e > div:nth-child(5){
+	order: 6;
+}
+
+/* set the flex grow of the 4th item in the 4th container */
+#q3d > div:nth-child(4){
+	flex-grow: 1;
+}
+
+/*Put the Order of the 2nd item in the 5th container at the  first position */
+#q3e > div:nth-child(2){
+	align-self: flex-start;
+	order: 1;
+}
+
+/* Set the Order the first item of the fifth container */
+#q3e > div:nth-child(1){
+	align-self: flex-end;
+	order: 2;
+}
+
+/* Set the Order the 4th item of the 5th container */
+#q3e > div:nth-child(4){
+	align-self: flex-end;
+	order: 3;
+}
+
+/* Put the Order of the the sixth item in the 5th container in the 4th position */
+#q3e > div:nth-child(6){
+	align-self: flex-end;
+	order: 4;
+}
+/* Display the alignment of all of the items in the 4th container, and place them at  the bottom of the container */
+#q3d{
+	align-items: flex-end;
+
+}
+
+/* Set the alignment of the special items in the container */
+#q3d > .special {
+	align-self: center;
+
+}

@@ -1,0 +1,46 @@
+:root {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  /* Get the 'background-color' from the instructions */
+  background-color: mediumorchid;
+}
+
+header {
+  text-color: #612ca8;
+  background: linear-gradient(deeppink, transparent);
+}
+
+nav a:hover {
+background-color: deeppink;
+}
+
+main 
+{
+background-color: #fff;
+}
+
+fieldset > legend, button {
+background-color: deeppink;
+}
+fieldset {
+border: .2em solid deeppink;}
+
+main > h1 { color: #612ca8;
+weight: blood;}
+
+footer
+{ color: white}
+
+nav a {color: white}
+
+a { color: #612ca8;
+}
+
+h1 { font-weight : bold;
+font-size: 2em;}
+
+label[for="choice"]
+{color: #612ca8;
+font-weight:bold;
+font-size: 1em;
+}

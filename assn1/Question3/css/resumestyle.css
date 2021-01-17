@@ -1,0 +1,232 @@
+/*
+		Student Name: Ahmed Ahmed
+ 		Student #: 0632851
+ 		Course: COIS 3420
+
+		Purpose: The main purpose of this CSS document is for Assignment 1 Question 3 (Resume page) CSS page
+		In this CSS document page I am creating a CSS document that is going to style the layout for my Html resume page.
+*/
+
+/* Style the main body of the entire resume page such as the bakcground color, text color etc.*/
+body
+{
+	background: #181818;
+	color: #222;
+	font-family: helvetica, arial, sans-serif;
+	font-size: 16px;
+	justify-content: space-between;
+}
+
+
+/* Style the section solid blocks that separates the contents in the resume page */
+.clear
+{
+	clear: both;
+}
+
+
+/* this creates the styles of all the links in the resume page */
+a {
+/* make the initial color of all the links to be blue */
+ color: #0000FF;
+/* no need for extra text-docorations */
+ text-decoration: none;
+}
+
+/* creates the color of the hover to be purple once the user hovers over the links */
+a:hover
+{
+	color: #bc2792;
+	}
+/* creates the styles in all the paragraphs in the resume page */
+p
+{
+	color: #444;
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+
+}
+
+/* This CSS makes the entire page of the resume to be white in color
+and it also specifies the margin, and the width size of the resume page */
+#Resume
+{
+	display: grid;
+	grid-row: auto;
+	background: #ffffff;
+	margin: 30px auto ;
+	width: 90%;
+
+}
+
+/* This properties selectively outlines the the physical apperance of the main details in my resume
+i.e. the top most part of the resumestyle*/
+
+.mainDetails
+ {
+
+	background: white;
+	border-bottom: 2px solid Gray;
+	padding: 25px 35px;
+}
+
+/* This selects the appearance of the first heading in my resume */
+#name h1 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 2.5em;
+	font-weight: 700;
+	margin-bottom: -6px;
+}
+
+/* This selects the appearance of the second heading in my resume */
+#name h2 {
+	font-size: 1.5em;
+	margin-left: 2px;
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+/* layout for the mainArea in the resume */
+#mainArea {
+	padding: 0 40px;
+}
+
+/* Define attributes for the headshot elements*/
+#headshot {
+	width: 12.5%;
+	float: left;
+	margin-right: 30px;
+}
+
+/* Define attributes for the image element in the headshot*/
+#headshot img {
+	width: 100%;
+	height: auto;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+/* Define attributes for the name element*/
+#name {
+	float: left;
+}
+
+/* Define attributes for the contactDetails element in the resume*/
+#contactDetails {
+	float: right;
+}
+
+/* Define attributes for the contactDetails of the unordered list elements in the resume*/
+#contactDetails ul {
+	list-style-type: none;
+	font-size: 0.9em;
+	margin-top: 4px;
+}
+
+/* Define attributes for the contactDetails list elements in the resume*/
+#contactDetails ul li {
+	margin-bottom: 3px;
+	color: #444;
+}
+
+/* define the styles in the contactDetails, and the list stylings */
+#contactDetails ul li a, a[href^=tel] {
+	color: #444;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	transition: all .3s ease-in;
+}
+
+/* define the attributes of the lists int he contactDetails, and the hover stylings*/
+#contactDetails ul li a:hover {
+	color: #4000ff;
+}
+
+
+/* define the styles of all the sections in which the resume contains */
+section {
+	display: block;
+	border-top: 1px solid #3b2735;
+	padding: 20px 0 0;
+}
+
+/* specifically define the styles of the first section*/
+section:first-child {
+	border-top: 0;
+}
+
+
+/* specifically define the styles of the last section*/
+section:last-child {
+	padding: 20px 0 10px;
+}
+
+/* define the styles of the Titles withing the section */
+.sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+/* define the section content stylings */
+.sectionContent {
+	float: right;
+	width: 72.5%;
+}
+
+/* create a layout for the first header in the sectionTitle */
+.sectionTitle h1 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 2em;
+	color: #841b66;
+}
+
+/*specifically deines the layout for the first header in the sectionContent */
+.sectionContent h1 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 3em;
+	margin-bottom: -2px;
+}
+
+/*specifically deines the layout for the second header in the sectionContent */
+.sectionContent h2 {
+	font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: -2px;
+}
+
+/*specifically deines the layout for the third header in the sectionContent */
+.sectionContent h3 {
+	font-family: 'Lato', Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+	margin-bottom: -2px;
+}
+
+/*specifically deines the layout for the section subDetails */
+.subDetails {
+	font-family: Arial;
+	font-size: 1em;
+	font-style: italic;
+	margin-bottom: 3px;
+}
+
+
+/* creates 3 colums, and determines font styles, color and other properties for the keySkills I have in my resume */
+.keySkills {
+	list-style-type: none;
+	-moz-column-count:3;
+	-webkit-column-count:3;
+	column-count:3;
+	margin-bottom: 20px;
+	font-size: 1em;
+	color: #444;
+}
+
+/*defines the stylings of the keySkills in the resume */
+.keySkills ul li {
+	margin-bottom: 3px;
+}

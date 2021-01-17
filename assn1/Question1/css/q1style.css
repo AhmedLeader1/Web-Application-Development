@@ -1,0 +1,107 @@
+/*
+		Student Name: Ahmed Ahmed
+ 		Student #: 0632851
+ 		Course: COIS 3420
+
+		Purpose: The main purpose of this CSS document is for Assignment 1 Question 1
+		In this CSS document page I am creating the style for the HTML elements according to the following instructions.
+*/
+
+
+
+
+/* Give the <body> element a background of #bdc3c7*/
+body{
+  background-color: #bdc3c7;
+}
+
+/* Make the <h1> and <h2> elements text #9b59b6, and the  Inconsolata (Google font), with an appropriate fallback font stack chosen at CSSFontStack.com. Do this with a single style rule.*/
+h1, h2{
+  color: #9b59b6;
+  font-family: "Inconsolata", sans-serif;
+}
+
+
+/* Make all <li> elements text blue(pick your own hexadecimal blue)*/
+li{
+  color: #6666FF;
+}
+
+/*Change the background on every paragraph to be yellow*/
+p{
+  background-color: yellow;
+}
+
+/*Make all inputs have a 3px red border*/
+input{
+  border-width: 3px;
+  border-color: red;
+
+}
+
+/* Give everything with the class 'hello' a white background*/
+.hello{
+  background-color: white;
+}
+
+/* Give the element with id 'special' a 2px solid blue border(pick your own rgb blue)*/
+#special{
+  border-color: #4c4cff;
+  border-style: solid;
+  border-width: 2px;
+
+}
+
+/*Make the text of all the <p>'s that are nested inside of divs 1.25 times the M-height*/
+div p{
+  font-size: 125%;
+}
+
+
+/*Make only inputs with type 'text' have a gray background*/
+input[type="text"]{
+  background-color: gray;
+}
+
+
+/* Give both <p>'s inside the 3rd <div> a pink background*/
+div:nth-child(5) p{
+  background-color: pink;
+}
+
+
+/*Make the <h1> element's color change to blue when hovered over */
+h1:hover {
+  color: blue;
+}
+
+
+/*Make the <a> element's that have been visited gray */
+a:visited{
+  color: gray;
+}
+
+
+
+/*Make any div immediatly after a paragraph have a 5px purple border with rounded corners.*/
+p + div{
+  border-color: purple;
+  border-style: solid;
+  border-width: 5px;
+
+
+}
+
+
+/*Make all "checked" checkboxes have a left margin of 5-times the M-height */
+input[type=checkbox]:checked{
+  margin-left: 0.05%
+}
+
+
+/*Make the first letter of the element with id 'special' green and 3-times the M-height*/
+#special::first-letter{
+  color: GREEN;
+  font-size: 300%;
+
+}

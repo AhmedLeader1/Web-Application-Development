@@ -1,0 +1,112 @@
+
+
+/*Styling for the main body */
+body{
+  font-family: serif;
+  font-size: 17px;
+  line-height: inherit;
+  background-color: white;
+}
+
+
+/*Styling for the main */
+main{
+  padding-bottom: 20px;
+}
+
+/*Styling for the lists */
+
+li{
+  list-style: none;
+
+}
+
+/*Styling for the Hyperlinks */
+a{
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+}
+
+
+/*Styling for the labels*/
+label{
+  display: inline-block;
+  width: 180px;
+}
+
+/*Styling for the input type text */
+.flexform input[type='text']
+{
+  width: 70%;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+/*Styling for the input type number */
+input[type='number']
+{
+  width: 50px;
+  padding: 4px;
+  border-radius: 5px;
+  border: 1px #ccc solid;
+}
+
+
+/*Stylings for the subcontianer in the main */
+.container{
+  width: 70%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+/* Stylings for the email container*/
+.container .flexform
+{
+  width: 50%;
+}
+
+
+/*Styling for the header */
+header{
+  border-bottom: 3px #f4f4f4 solid;
+  text-align: center;
+}
+
+
+/*Styling for the footer */
+footer{
+  padding-top: 5px;
+  border-top: 3px #f4f4f4 solid;
+  text-align: center;
+}
+
+
+/*Styling for the "next" and start the quiz buttons*/
+a.start{
+  display: inline-block;
+  color: white;
+  background-color: green;
+  border: 1px dotted gray;
+  padding: 6px 13px;
+
+}
+
+
+
+/*Stylings for the main container if the screen is reduced in size
+   This is to make the screen responsive*/
+@@media only screen and (max-width:960px) {
+  .container{
+    width: 80%;
+  }
+}
+
+/*Styling for the subcontianer after the header and before the footer*/
+.current{
+  padding:10px;
+  background-color: gray;
+  border: #ccc dotted 1px;
+  margin: 20px 0 10px 0;
+}

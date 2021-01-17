@@ -1,0 +1,231 @@
+:root {
+  font-family: Helvetica, sans-serif;
+  background-color: mediumorchid;
+  font-size: 16px;
+}
+
+a {
+  color: #612ca8;
+  transition: text-decoration-color 125ms ease-in-out;
+}
+
+a:hover {
+  text-decoration-color: deeppink;
+}
+
+header {
+  background: linear-gradient(deeppink, transparent);
+}
+
+header img {
+  display: block;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 0;
+}
+
+nav ul {
+  display: -webkit-flex;
+  display: flex;
+  padding: 0.45em;
+}
+
+nav li {
+  display: block;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  margin: 0 0.3em;
+  text-align: center;
+}
+
+nav a, button {
+  padding: 0.5em 0.75em;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 100%;
+  border: 0.15em solid deeppink;
+  background-color: deeppink;
+  border-radius: 0.25em;
+  transition-property: color, background-color;
+  transition-duration: 125ms;
+  transition-timing-function: ease-in-out;
+}
+
+nav a:hover, button:hover {
+  color: deeppink;
+  background-color: white;
+  cursor: pointer;
+}
+
+nav a:active, button:active {
+  color: deeppink;
+  background-color: #f1f1f1;
+}
+
+main, nav, footer {
+  max-width: 50em;
+  margin: 0.4em auto;
+}
+
+main {
+  min-height: 25rem;
+  border-radius: 0.5em;
+  background-color: white;
+  padding: 0.95em 2em;
+}
+
+h1 {
+  color: #612ca8;
+  font-weight: 600;
+  font-size: 2rem;
+  margin-top: 0.35em;
+  margin-bottom: 0.8em;
+  text-align: center;
+}
+
+form {
+  display: block;
+}
+
+form div, fieldset, form button {
+  display: block;
+  margin: 0.5em 0.3em;
+}
+
+fieldset {
+  border: 0.15em solid deeppink;
+  border-radius: 0.5em;
+  margin-top: 0.85em;
+  margin-bottom: 0.85em;
+  padding-bottom: 0.5em;
+}
+
+fieldset div {
+  margin: 0.5em 1.5em;
+}
+
+legend {
+  background-color: deeppink;
+  border-radius: 0.3em;
+  color: white;
+  padding: 0.3em 0.6em 0.3em 0.5em;
+  margin-left: 0.85em;
+  font-style: italic;
+}
+
+fieldset~div {
+  margin: 1.1rem 0.3em;
+  text-align: center;
+}
+
+fieldset~button {
+  margin-top: 1.5rem;
+}
+
+footer {
+  padding: 0.30em;
+  color: white;
+  text-align: center;
+}
+
+button.centered {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label[for="choice"], #choice {
+  font-size: 110%;
+}
+
+label[for="choice"] {
+  font-weight: 600;
+  color: #612ca8;
+}
+
+#errors {
+  color: #8f0726;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+#errors li {
+  margin: 1em 0;
+}
+
+
+/*##################################################
+              Results Page Styles
+######################################################*/	
+#results td{
+	padding: .3em 1em;
+}
+
+#results td:last-child{
+	text-align:center;
+	
+}
+
+#results tr:nth-child(even){
+	background-color:#ddd;
+}
+
+#results tfoot{
+	border-top:.2em solid #612ca8;
+}
+
+#results thead{
+	border-bottom:.2em solid #612ca8;
+}
+
+#results tfoot td{
+  padding-top:1em;
+  color: deeppink;
+	font-weight:bolder;
+}
+
+#results thead th{
+  
+	padding:.2em;
+  padding-bottom: .5em;
+  text-align:left;
+	font-weight:bolder;
+}
+
+
+#tablewrap{
+	border: .2em solid #612ca8;
+	border-radius:.3em;
+	padding: .5em;
+	margin:1em auto 0em;
+	width: 40em;
+}
+
+#results {
+	margin:auto;
+	font-size: 1.5em;
+}
+
+/*##################################################
+             Login Form
+######################################################*/	
+
+form#login{
+  width: 30em;
+  margin:auto;
+  padding-top:.5em;
+  font-size:1.3em;
+}
+
+#login label{
+  display:inline-block;
+  width:6em;
+}
+
+
+#login input{
+  font-size: .8em;
+}
+

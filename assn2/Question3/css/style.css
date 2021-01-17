@@ -1,0 +1,87 @@
+a:hover{
+  color:#DC143C;
+}
+
+
+/*Styling for the main body */
+body{
+  font-family: serif;
+  font-size: 17px;
+  line-height: inherit;
+  background-image: linear-gradient(to right, #a9b0bc, #949da9, #7f8b97, #6a7985, #566773);
+}
+
+
+/*Styling for the main */
+main{
+  padding-bottom: 20px;
+}
+
+/*Styling for the lists */
+
+li{
+  list-style: none;
+
+}
+
+/*Styling for the Hyperlinks */
+a{
+  text-decoration: none;
+  background-color: gray;
+  color: white;
+}
+
+
+
+
+/*Stylings for the subcontianer in the main */
+.container{
+  display: grid;
+	grid-row: auto;
+  width: 50%;
+  margin: 0 auto;
+  overflow: auto;
+
+}
+
+
+
+/*Styling for the header */
+header{
+  border-bottom: 3px #f4f4f4 solid;
+  text-align: center;
+}
+
+
+/*Styling for the footer */
+footer{
+
+  padding-top: 5px;
+  border-top: 3px #f4f4f4 solid;
+  text-align: center;
+  bottom: 0;
+}
+
+
+/*Styling for the "next" and start the quiz buttons*/
+a.start{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  color: white;
+  background-color: gray;
+  border: 1px dotted blue;
+  padding: 6px 13px;
+
+}
+
+/* creates the styles in all the paragraphs */
+p
+{
+
+	font-size: 1em;
+	line-height: 1.4em;
+	margin-bottom: 20px;
+
+}

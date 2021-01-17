@@ -1,0 +1,99 @@
+
+  body {
+        background-image: linear-gradient(to right, #a9b0bc, #949da9, #7f8b97, #6a7985, #566773);
+          font-size:16px;
+      }
+
+
+    header{
+      display:flex;
+      flex-direction: row;
+      justify-content: center;
+      border-bottom: black solid 0.2em;
+    }
+    header div{
+      margin-bottom: 2em;
+    }
+    header>div>ul{
+      display:flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-bottom: 0.7em;
+      text-decoration: none;
+      list-style-type: none;
+    }
+    header>div>ul>li>a{
+      padding: 0.5em;
+      border: 1px solid black;
+      border-radius: 0.2em;
+      background-color: black;
+      margin: 0.3em;
+      text-decoration: none;
+      align-items: center;
+      color: white;
+    }
+
+
+    header>div>h1{
+      font-size: 3em;
+      margin: 1em 1em;
+      display:flex;
+      flex-direction: row;
+      justify-content:
+    }
+
+      .withH{
+        color: #000066;
+      }
+      .others{
+        color:#660000;
+      }
+
+      #container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: center;
+          }
+        #partA{
+                display: flex;
+                flex-direction: column;
+
+                align-content: center;
+              }
+
+
+
+        form{
+          border-top: 10px;
+          font-weight: bold;
+        }
+
+          td {
+              height: 24px;
+              text-align: center;
+              width: 24px;
+              overflow: auto;
+          }
+
+          td.equal {
+              background-color: #ccc;
+          }
+
+
+          td.different {
+              background-color: #fff;
+          }
+
+          td a {
+              display: block;
+              text-decoration: none;
+          }
+
+          td a:hover {
+              background-color: #FFC0CB;
+          }
+input[type="submit"]
+{
+  background-color: gray;
+}

@@ -1,0 +1,266 @@
+<!-- Student name: Ahmed Ahmed
+         Student#:0632851
+
+         Purpose: This is the html page for Question 2
+                  In this page, I am writing my blog to explain how to make a timer in JavaScript.
+-->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <title>QUESTION 2</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="scripts.js" charset="utf-8"></script>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div id="container">
+<h1>Introduction</h1>
+<p>In a world of computing and the normal real life, the are so many activities that need you to have a timer that controls how long you are going to finish a given task. For instance,
+  some of the things that you may need a timer include playing a game, doing a time-based quiz or other school-based activities that have a specific time limit. Therefore, you will need to count on
+  the total time you will take to any specific activity you are doing.</p>
+<p>In this blog, I am going to discuss a simple library of JavaScript. The library I would like to talk about is called <em>EasyTimer.js</em>.While there are many physical timers that you can use,
+  using JavaScript timer is one of the most sophisticated digital timers that has even been developed and easy to use without spending lots of many to have a physical timer. This is because the
+  EasyTimer.js library in JavaScript has more advantages over using plugins because:</p>
+  <ul>
+    <li>It is easy to code (easy to understand) and it only takes very few lines of code</li>
+    <li>It enhances the performance as there will be no need to load any external scripts</li>
+    <li>It makes the user appreciate the activity they are doing, say a vide a game,
+      this is because it enables the user to clock the timer the way they want</li>
+    <li>The JavaScript-based timer has more built-in features than plugins, these include:</li>
+    <li>It has a refresh interval that can be configured in tenths of seconds, seconds, minutes and even hours.</li>
+    <li>It also has a dispatch of events once the timer starts, stops, pause or whenever a type of unit changes </li>
+    <li>It also has two timer modes, which is a Regular and a Countdown mode.</li>
+    <li>It also contains a custom call back feature that can be defined and executed every timer refresh.</li>
+  </ul>
+
+<p>In this blog, I will mainly introduce how to code both the CountUp and the CountDown features of the <em>EasyTimer.js</em> with real-life examples.</p>
+<h1>CountUp Timer (from a certain date)</h1>
+<p>The count-up timer allows you to give an accurate timer that will enable you to determine the count downtime from a certain date and time.</p>
+<p>
+  <h1>Applications of CountUp timer</h1>
+  <p>The CountUp timer has many real-life applications that include:</p>
+  <ul>
+    <li>It is used to count Up the days passed from a certain event or anniversary.</li>
+    <li>It is used to count Up an income/revenue loss from a certain date. This might need further computation once the days are determined</li>
+    <li>It is used to monitor days passed without an incident in many industrial workplaces</li>
+  </ul>
+<p>Assume you want to know the number of days, hours, minutes and seconds the outbreak of the <em><strong>Coronavirus disease <a href="https://www.worldometers.info/coronavirus/">"COVID 19"</a></strong></em> has been into existence.
+  To get such information easily, you can simply have a count-up timer in <em>JavaScript</em>.
+  All you need is to know the date in which the outbreak of the virus was noticed, that is on <em>31st December 2020</em></p>
+  <h2>Example</h2>
+      <div id="cod1">
+      <pre>
+      <code>
+    // Initialize a countDownDate variable to the date and time that you want to count down
+    var countUpDate = new Date("December 31, 2019 00:00:00").getTime();
+
+                                      or
+
+    var countUpDate = new Date("31/12/2019 00:00:00").getTime();  //Different date format
+      </code>
+    </pre>
+  </div>
+<div>
+  <p>The above formats will allow you to specify the exact hours, minutes and seconds. You can also specify the time zones if you would like. Read further date formats of <em>JavaScript</em> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Numbers_and_dates">here</a></p>
+</div>
+    <h2>Result</h2>
+    <p class="timer" id="countUp"></p>
+  <P>At this point, you should have a general concept of what the CountUp of <em>JavaScript</em> does. Therefore, I am going to explain into details of the entire program with few lines codes that will help you understand how the countUp works easily.</P>
+  <P>Before I dive into the coding part, there's simple <em><strong>pseudocode</strong></em> that will help you understand the entire coding part easily</P>
+  <ul>
+    <li>Set the initial countdown date(see the above example)</li>
+    <li>Get the current Date and Time</li>
+    <li>Update the count Up for every 1 second elapsed</li>
+    <li>Find the difference between the current date and the count up to date</li>
+    <li>Convert the time to days, hours, minutes and seconds format</li>
+    <li>Check the total time and display the output in a clock format(increasing after every second)</li>
+  </ul>
+  <P>Now let us dive into the coding part of the program. Once you Set the Initial countdown date (in the above example), you need to set the Interval</P>
+  <div id="cod2">
+      <pre>
+      <code>
+        // Update the count Up for every 1 second elapsed
+        var l = setInterval(function()
+        {
+
+          //Other code goes here
+
+        }, 1000);
+      </code>
+    </pre>
+  </div>
+  <div>
+  <P>To calculate the total passed from the date we specified above we need to have a function, like the one above, the function takes a string representing the
+    given start time and calculated the difference between that time and the current time. Check the example below as we add more lines of code to the above function.
+    We first need to get current the current date before we do anything else.</P>
+  </div>
+  <div id="cod3">
+      <pre>
+      <code>
+        // Get the current date and time (the very moment day)
+        var currentDate = new Date().getTime();
+      </code>
+    </pre>
+  </div>
+<div>
+  <P>After that, we need to get the time difference between the current date and the count up to date (continuously going up) </P>
+</div>
+  <div id="cod4">
+      <pre>
+      <code>
+        // Find the diffrence between current date and the count up date
+        var difference = currentDate - countUpDate;
+      </code>
+    </pre>
+  </div>
+  <div>
+  <p>In the above code, we first create a <em><strong>difference</strong></em> variable to hold the time difference from the specified date up to the current date. The built-in JavaScript
+    feature allows us to store the time difference in milliseconds hence easy to subtract once they are in the same units</p>
+  <p>After we get the difference in time, we can calculate and convert the time difference in days, hours, minutes and into seconds</p>
+  </div>
+  <div id="cod5">
+      <pre>
+      <code>
+    // Time calculations for days, hours, minutes and seconds
+    var seconds = Math.floor((difference % (1000 * 60)) / 1000);
+    var minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    var hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+      </code>
+    </pre>
+  </div>
+  <div>
+  <p>What is the above code doing? you might ask yourself! Well, there is a simple mathematical logic going on there, that is: the<em><strong> Math.floor()</strong></em> function allows
+    us to convert a time string into an integer of <em><strong>milliseconds</strong></em>. After that, we can convert the seconds into days, hours and minutes</p>
+</div>
+    <ul>
+      <li>To get the number of <em><strong>days ( 24 hours per single day )</strong></em>, divide the number of milliseconds by <em><strong>1000*60*60*24 (total number of milliseconds in a single day)</strong></em></li>
+      <li>To get the number of <em><strong>hours</strong></em>, divide the number of milliseconds by <em><strong>1000*60*60* (total number of milliseconds in an hour)</strong></em></li>
+      <li>To get the number of <em><strong>minutes</strong></em>, divide the number of milliseconds by <em><strong>1000*60 (total number of milliseconds in a minute)</strong></em></li>
+      <li>To get the number of <em><strong>seconds</strong></em>, divide the number of milliseconds by <em><strong>1000*60*60* (total number of milliseconds in a second)</strong></em></li>
+     </ul>
+    <span><em><strong>Note:</strong></em> The <em><strong>%</strong></em> operation enables us to get only a whole number, hence disregarding any values after the decimal <em><strong>(the millisecond fractions)</strong></em></span>
+  <p>Lastly, we need to display our output. To display your output, you can use an if statement to catch any errors, like a wrong date format <strong><em>e.g. 39/12/2019</em></strong>
+    or any other <strong>ERROR!</strong></p>
+  <div id="cod6">
+      <pre>
+      <code>
+    // Check if the timeDifference is greater than 0
+    if(difference > 0)
+     {
+      // if it is greate than zero, dislay the output in countDown Id in the html page
+      document.getElementById("countUp").innerHTML = days + " days "+ hours + " hours "
+      + minutes + " minutes " + seconds + " seconds ";
+     }
+
+    else {
+      // clear the Interval & display a text message to show an ERROR!
+      clearInterval(l);
+      document.getElementById("countUp").innerHTML = "ERROR!";
+    }
+      </code>
+    </pre>
+  </div>
+  <p>At this point, you have a solid knowledge of how to code the count up timer in <em>JavaScript</em>. Next, I am going  to let discuss how to code the countDown timer in <em>
+  EasyTimer.js</em> library of <em>JavaScript</em></p>
+  <h1>CountDown Timer (to a certain date)</h1>
+  <p>Assume you were worried how long will the lockdown due to the <em><strong>Coronavirus disease <a href="https://www.worldometers.info/coronavirus/">"COVID 19"</a> </strong></em>last to a certain day, say till <em> 30th April 2020</em>.To get such information is one of the applications of the CountDown timer. </p>
+  <h2>Example</h2>
+  <p></p>
+  <div id="cod7">
+      <pre>
+      <code>
+        //Set a timer from now till August 30th, 2020 at midnight
+        var Date = new Date(April 30, 2020, 00:00:00).getTime();
+      </code>
+    </pre>
+  </div>
+<div>
+  <p>We first need to set a valid end date and time. You can set the date and time in any valid format that you would like.</p>
+</div>
+  <h2>Result</h2>
+<p class="timer" id="countDown"></p>
+<span><em><strong>Note:</strong></em> as you noticed, the timer, in this case, is going down after every second, unlike the previous example, hence the CountDown format.</span>
+<h1>Applications of CountDown timer</h1>
+<p>The countdown timer has lots of application that includes: </p>
+  <ul>
+    <li>It used to count down the time remaining for a specific game (e.g. football or video games) to finish</li>
+    <li>It is used to count the time remaining for a specific date of an event</li>
+    <li>It is used to count the time remaining for ongoing sale to finish by some commerce websites e.g. Amazon etc.</li>
+  </ul>
+
+<p>When it comes to the coding part of the countdown timer, it is not that different from the count up timer, they only have one point of logic difference.
+  To get the time difference of the countDown timer, you need to subtract the current date and time from the upcoming date and time, this is exactly opposite to the countUp timer. </p>
+
+<div id="cod8">
+<pre>
+<code>
+  // Calculate the time difference between upcoming date and the current date
+  var timeDifference = countDownDate - currentDate;
+</code>
+</pre>
+</div>
+<div>
+<p>Here is the complete code of the countUp timer:</p>
+</div>
+<div id="cod9">
+<pre>
+<code>
+"use strict"
+window.onload = () =>
+{
+  /* Initialize a countDownDate variable to the date and time that you want
+  to count down */
+  var countDownDate = new Date("April 30, 2020 00:00:00").getTime();
+
+  // Update the count down for every 1 second elapsed
+  var k = setInterval(function()
+   {
+
+      // Get the current date and time (the very moment day)
+      var currentDate = new Date().getTime();
+
+      // Calculate the time difference between upcoming date and the current date
+      var timeDifference = countDownDate - currentDate;
+
+  /* Calculates the days, hours, minutes and seconds remaining (Decreasing second
+  after a second) */
+  var days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+  // Check if the timeDifference is greater than 0
+  if (timeDifference > 0)
+    {
+      // if it is greater than zero, dislay the output in countDown Id in the html page
+      document.getElementById("countDown").innerHTML = days + " days " + hours + " hours "
+      + minutes + " minutes " + seconds + " seconds ";
+    }
+  // if the the date is passed display a text to show that
+  else{
+        clearInterval(x);
+        document.getElementById("countDown").innerHTML = "ERROR! the date has passed";
+      }
+    }, 1000);
+
+};
+
+
+</code>
+</pre>
+<p>Check <a href="https://www.youtube.com/watch?v=_5QAnRp0kW4" >here</a> to add more functionality to the timer</p>
+</div>
+<div>
+<h1>Disadvantages of EasyTimer.js Library</h1>
+<p>It is well known that the advantages of <em>EasyTimer.js</em> outstand than its only disadvantages which are performance. Delay in time is the only performance
+  disadvantage which is associated with <em>EasyTimer.js</em> library.</p>
+</div>
+<h1>References:</h1>
+<ul>
+<li><a href="https://www.educative.io/edpresso/how-to-create-a-countdown-timer-using-javascript">educative.io</a></li>
+<li><a href="https://albert-gonzalez.github.io/easytimer.js/"> EasyTimer.js</a></li>
+</ul>
+</div>
+</body>
+</html>
